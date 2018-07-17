@@ -1,0 +1,19 @@
+{
+  "name": "tweetsfetcher",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "./node_modules/gulp/bin/gulp.js",
+    "download": "./node_modules/gulp/bin/gulp.js download",
+    "deduplicate": "./node_modules/gulp/bin/gulp.js deduplicate",
+    "verify": "./node_modules/gulp/bin/gulp.js verify"
+  },
+  "dependencies": {
+    "moment": "^2.22.2",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.4.0"
+  }
+}
