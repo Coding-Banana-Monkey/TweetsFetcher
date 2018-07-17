@@ -17,8 +17,8 @@ function validate(tweets, window) {
 
 function verify() {
     const window = {
-        start: moment(config.firstDay).valueOf(),
-        end: moment(config.lastDay).valueOf()
+        start: moment.utc(config.firstDay).valueOf(),
+        end: moment.utc(config.lastDay).valueOf()
     };
     const actualData = JSON.parse(fs.readFileSync(config.tweetsFile));
     const expectedData = JSON.parse(fs.readFileSync(config.expectedFile));

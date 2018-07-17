@@ -77,8 +77,8 @@ function sendRequest(start, end, lastDay) {
 }
 
 sendRequest(
-    moment(FIRST_DAY_INCLUSIVE),
-    moment(FIRST_DAY_INCLUSIVE).add(DATE_INCREMENT, 'd'),
-    moment(LAST_DAY_EXCLUSIVE).valueOf()
+    moment.utc(FIRST_DAY_INCLUSIVE),
+    moment.utc(FIRST_DAY_INCLUSIVE).add(DATE_INCREMENT, 'd'),
+    moment.utc(LAST_DAY_EXCLUSIVE).valueOf()
 );
 
