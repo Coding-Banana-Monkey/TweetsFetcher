@@ -34,7 +34,7 @@ Usage
 
 ### Download
 After installation, you should be able to download tweets in 2016 and 2017. The download tweets will be stored in the 
-file *tweets.json* under the root folder. 
+file *tweets.json* under the root folder. The result might contain duplicates. You can follow the Deduplicate instruction below to get the final result.
 
 Use the following command to download tweets:
 
@@ -42,8 +42,12 @@ Use the following command to download tweets:
 
 While downloading, the program prints out logs in the terminal.
 
-### Verify
+### Deduplicate
+Run the following command:
 
+``npm run deduplicate``
+
+### Verify
 In order to verify the downloaded data, you have to prepare the expected data in a json file and name it *expected.json*.
 Run the following command to verify the downloaded tweets:
 
